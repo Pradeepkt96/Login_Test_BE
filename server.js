@@ -11,7 +11,7 @@ const SECRET_KEY = 'your_secret_key';
 app.use(cors());
 app.use(express.json());
 
-// ✅ Updated MongoDB Connection (no deprecated options)
+// ✅ Updated MongoDB Connection
 mongoose.connect('mongodb://127.0.0.1:27017/userAuth')
   .then(() => console.log('✅ Connected to MongoDB'))
   .catch(err => console.error('❌ MongoDB connection error:', err));
